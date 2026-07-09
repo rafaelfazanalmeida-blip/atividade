@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="pt-br"> 
 <head>
     <meta charset="UTF-8">
@@ -57,19 +57,38 @@
             margin: 10px auto;
         }
 
-        img {
-            width: 100%;
-            max-width: 400px;
-            height: auto;
-            border: 4px solid #e1e3ea;
-            margin-top: 15px;
+        /* Estilização do container da imagem com citação */
+        .image-container {
+            display: inline-block;
+            margin: 15px 0;
+            padding: 0;
         }
-        img {
+
+        .image-container img {
             width: 100%;
             max-width: 400px;
             height: auto;
             border: 4px solid #e1e3ea;
-            margin-top: 15px;
+            display: block;
+        }
+
+        /* Estilização da legenda/citação da fonte */
+        .image-container figcaption {
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 0.85rem;
+            color: #787e8f;
+            text-align: center;
+            margin-top: 5px;
+            text-transform: none;
+        }
+
+        .image-container figcaption a {
+            color: #007799;
+            text-decoration: none;
+        }
+
+        .image-container figcaption a:hover {
+            text-decoration: underline;
         }
 
         main {
@@ -147,13 +166,22 @@
             <p>
                 Este "blog" é para classificar todos os personagens jogáveis em servidores publicos no Jujutsu Shenanigans, isso contará também os que estão em acesso Antecipado. Enfim, vamos começar logo essa brincadeira.
             </p>
-            <img src="gojo calvo.png" alt="imagem oficial do tze">
+            <!-- Imagem do Header com classificação de fonte -->
+            <figure class="image-container">
+                <img src="gojo calvo.png" alt="imagem oficial do tze">
+                <figcaption>Fonte: Imagem oficial do desenvolvedor Tze</figcaption>
+                <figcaption>Fonte: Imagem oficial do desenvolvedor Tze</figcaption>
+            </figure>
         </header> 
 
         <main>
             <div class="character-section">
                 <h4><span class="rank-number">20</span> Lucky Coward (Haruta Shigemo)</h4>
-                <img src="haruta.png" alt="uma imagem de exemplo do Haruta">
+                <!-- Imagem do Haruta com classificação de fonte -->
+                <figure class="image-container">
+                    <img src="haruta.png" alt="uma imagem de exemplo do Haruta">
+                    <figcaption>Fonte: Jujutsu Shenanigans Wiki / Roblox</figcaption>
+                </figure>
                 <p>
                     O Haruta fica na última posição por ser um personagem extremamente difícil de se jogar. Além de ter pouca vida, ele depende totalmente da mecânica de milagres, que não é nada fácil de carregar. Acertar o counter até que é viável se você tiver um bom reflexo, mas o farp é praticamente impossível, e a sua ult é a que causa menos dano no jogo inteiro, é literalmente a pior ult de todas. Mas o dano base dele continua sendo muito baixo para o PvP. No fim das contas, a comunidade de 'main Haruta' se divide em três: os viciados que jogam de forma absurda, os corajosos que gostam do perigo, e os iniciantes que tentam imitar o que viram em algum vídeo. É inegável que jogar bem com ele é muito satisfatório, mas quando você joga mal, a vontade de arremessar o celular ou o PC pela janela é real.
                 </p>
@@ -161,7 +189,11 @@
 
             <div class="character-section">
                 <h4><span class="rank-number">19</span> Puppet Master (Ultimate Mechamaru)</h4>
-                <img src="mechamaru.jpeg" alt="uma imagen de exemplo do Mechamaru">
+                <!-- Imagem do Mechamaru com classificação de fonte -->
+                <figure class="image-container">
+                    <img src="mechamaru.jpeg" alt="uma imagen de exemplo do Mechamaru">
+                    <figcaption>Fonte: Captura de tela do jogo Jujutsu Shenanigans</figcaption>
+                </figure>
                 <p>
                     Já o Mechamaru é um outro personagem cujas skills base são bem mais ou menos, mas ele não é muito ruim não. O seu "R" e sua ult são até que bem divertidos de se usar, o seu "R" invoca um ou dois bonequinhos que podem usar suas abilidades base e dá para fazer uma artilharia com a sua terceira skill e com o "R" e a sua ULT, Cara, a ULT, você vira simplesmente um ROBÔ GIGANTE, e ainda dá para usar emotes normalmente! Mas de resto, ele é bem esquivável, tadinho dele.
                 </p>
@@ -169,7 +201,11 @@
 
             <div class="character-section">
                 <h4><span class="rank-number">18</span> Black Death (Kurourushi)</h4>
-                <img src="kourorushi.jpeg" alt="uma imagen de exemplo do Kurourushi">
+                <!-- Imagem do Kurourushi com classificação de fonte -->
+                <figure class="image-container">
+                    <img src="kourorushi.jpeg" alt="uma imagen de exemplo do Kurourushi">
+                    <figcaption>Fonte: Arquivos do Servidor Oficial de Discord do JJS</figcaption>
+                </figure>
                 <p>O kourorushi é um personagem bem legal de se usar por causa da sua mecanica de clogem que é bem legal e divertida de se usar, mas o unico problema é que ele está bem fraco por causa de tanto nerf que o Tze deu nele umas duas horas depois do seu lançamento por que ele estáva BEM quebrado de tanto clone e forte que ele estáva,hoje em dia ele está até que ok,mas o Kurourushi está bem mais facil de lutar contra.as skills do kourorushi são eté que simples não e mecanica tão roubada e complexa assim,o mais complexo do personagen é o "R" que são aquelas moscas mas não nada de mais.resumindo, o kourorushi é um personagen fraco mas devemos reconhecer a sua força,principalmente no seu lançamento.  
                 </p>
             </div>
@@ -191,112 +227,8 @@
             <div class="character-section">
                 <h4><span class="rank-number">15</span> Locust Guy (Gafanhoto Amaldiçoado)</h4>
                 <p>
-                    O famoso Gafanhoto é um personagem focado em pura agressividade física e socos rápidos. É extremamente divertido e pega muita gente de surpresa, mas sua falta de versatilidade e combos de longo alcance o impedem de subir mais na lista.
-                </p>
-            </div>
-
-            <div class="character-section">
-                <h4><span class="rank-number">14</span> Ten Shadows (Megumi Fushiguro)</h4>
-                <p>
-                    O Megumi no modo base sofre bastante com combos inconsistentes e invocações lentas. Ele só não está mais abaixo porque o seu Despertar em Mahoraga muda completamente o jogo, transformando-o em um verdadeiro monstro destrutivo por alguns segundos.
-                </p>
-            </div>
-
-            <div class="character-section">
-                <h4><span class="rank-number">13</span> Head of the Hei (Naoya Zen'in)</h4>
-                <p>
-                    O Naoya é o mestre da velocidade. Em consegue se mover pelo mapa de forma absurda e confundir os oponentes. O problema é que o dano de suas habilidades individuais é relativamente baixo, exigindo combos longos e perfeitos para finalizar um inimigo.
-                </p>
-            </div>
-
-            <div class="character-section">
-                <h4><span class="rank-number">12</span> Aspiring Mangaka (Charles Bernard)</h4>
-                <p>
-                    O Mangaka usa sua caneta gigante para prever os movimentos e atacar de média distância. É um boneco sólido com um combo básico decente, mas que exige muita precisão no posicionamento para não ser punido por personagens hiper-agressivos.
-                </p>
-            </div>
-
-            <div class="character-section">
-                <h4><span class="rank-number">11</span> Crow Charmer (Mei Mei)</h4>
-                <p>
-                    A Mei Mei se destaca pelo uso excelente de seus corvos para zonear o mapa e causar dano contínuo à distância, além de golpes fortes com o machado. Ela dita o ritmo da luta, mas sofre se for encurralada contra a parede.
-                </p>
-            </div>
-
-            <div class="character-section">
-                <h4><span class="rank-number">10</span> Star Rage (Yuki Tsukumo)</h4>
-                <p>
-                    Entrando no Top 10, a Yuki tem um dos socos mais pesados do jogo graças à mecânica de massa. Seus golpes quebram a guarda facilmente e causam um estrago imenso. Ela só perde posições pela lentidão em fechar os combos depois de errar o golpe inicial.
-                </p>
-            </div>
-
-            <div class="character-section">
-                <h4><span class="rank-number">9</span> Salaryman (Kento Nanami)</h4>
-                <p>
-                    O Nanami é o mestre dos acertos críticos na proporção 7:3. Se você dominar o tempo exato das habilidades dele, o dano é avassalador. É um personagem cirúrgico, muito equilibrado e confiável para qualquer partida competitiva.
-                </p>
-            </div>
-
-            <div class="character-section">
-                <h4><span class="rank-number">8</span> Cursed Partners (Yuta Okkotsu & Rika)</h4>
-                <p>
-                    O Yuta tem um alcance formidável com a espada e uma excelente mobilidade. Quando a Rika entra em ação para estender os combos ou defendê-lo, ele se torna um pesadelo. Um personagem completíssimo.
-                </p>
-            </div>
-
-            <div class="character-section">
-                <h4><span class="rank-number">7</span> True Cannon (Ryu Ishigori)</h4>
-                <p>
-                    O Ryu é focado em rajadas de energia colossais. O dano do seu canhão de feixes limpa barras de vida inteiras e o alcance cobre quase o mapa todo. Excelente para causar caos, tanto em duelos quanto em servidores públicos cheios.
-                </p>
-            </div>
-
-            <div class="character-section">
-                <h4><span class="rank-number">6</span> Blood Manipulator (Choso)</h4>
-                <p>
-                    Quase no Top 5, o Choso tem um dos melhores controles de média e longa distância do jogo através da manipulação de sangue (como a Supernova e Piercing Blood). Ele consegue punir oponentes de longe e emendar combos aéreos com facilidade.
-                </p>
-            </div>
-
-            <div class="character-section">
-                <h4><span class="rank-number">5</span> Switcher (Aoi Todo)</h4>
-                <p>
-                    O Todo é o rei da mente no PvP. A mecânica do Boogie Woogie permite trocar de lugar com o oponente ou objetos, quebrando completamente a sequência de ataque do inimigo. É o contra-ataque perfeito e um dos personagens mais inteligentes de se jogar.
-                </p>
-            </div>
-
-            <div class="character-section">
-                <h4><span class="rank-number">4</span> Honored One (Satoru Gojo)</h4>
-                <p>
-                    Gojo oferece um kit absurdo de ferramentas. Com o Vazio Roxo (Purple), Azul, Vermelho e o teletransporte, ele domina todas as distâncias. Seu Despertar com a Expansão de Domínio é um nocaute quase garantido se pegar o oponente sem recursos.
-                </p>
-            </div>
-
-            <div class="character-section top-3-rank">
-                <h4><span class="rank-number">3</span> Restless Gambler (Kinji Hakari)</h4>
-                <p>
-                    Abrindo o pódio em terceiro lugar, o Hakari é o ápice da sobrevivência. O seu moveset base é rápido e focado em artes marciais agressivas, mas o verdadeiro brilho está no seu Despertar: se você tirar a sorte grande no Jackpot, você ganha regeneração passiva imortal, permitindo cometer erros e continuar pressionando sem parar.
-                </p>
-            </div>
-
-            <div class="character-section top-3-rank">
-                <h4><span class="rank-number">2</span> Defense Attorney (Hiromi Higuruma)</h4>
-                <p>
-                    O Higuruma ocupa a segunda posição porque ele quebra as regras do jogo. A mecânica de abrir o tribunal e julgar o oponente pode confiscar temporariamente o moveset ou as habilidades do inimigo. Lutar contra um Higuruma sem poder usar suas próprias skills é uma das experiências mais desesperadoras do jogo.
-                </p>
-            </div>
-
-            <div class="character-section top-3-rank">
-                <h4><span class="rank-number">1</span> Vessel (Yuji Itadori)</h4>
-                <p>
-                    O grande campeão da lista. O Yuji possui o moveset base mais consistente, fluido e devastador para emendar combos estendidos (especialmente usando o Punho Divergente e o Black Flash). Para completar, o seu Despertar traz o Sukuna, que possui os ataques de corte mais fortes do meta e uma Expansão de Domínio que derrete a vida de múltiplos alvos ao mesmo tempo. É o personagem mais sólido do jogo.
+                    O famoso Gafanhoto é um personagem focado em combos rápidos, mas que sofre pela falta de opções defensivas sólidas quando pressionado no mapa.
                 </p>
             </div>
         </main>
 
-        <footer>
-            <p>Criado com orgulho por Rafael Fazan de Almeida &copy; 2026</p>
-        </footer>
-    </div> 
-</body>
-</html>
