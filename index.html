@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-br"> 
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jujutsu Shenanigans - Tier List Oficial</title>
     <style>
-        /* Cores alteradas para fundo branco e fonte temática de mangá */
         body {
             background-color: #ffffff;
             color: #1a1a1a;
@@ -22,8 +22,8 @@
         }
 
         header {
-            background-color: #f5f6f8; 
-            color: #1a1a1a; 
+            background-color: #f5f6f8;
+            color: #1a1a1a;
             padding: 35px 20px;
             border: 3px solid #ff3e3e;
             box-shadow: 0 4px 15px rgba(255, 62, 62, 0.15);
@@ -63,13 +63,7 @@
             height: auto;
             border: 4px solid #e1e3ea;
             margin-top: 15px;
-        }
-        img {
-            width: 100%;
-            max-width: 400px;
-            height: auto;
-            border: 4px solid #e1e3ea;
-            margin-top: 15px;
+            border-radius: 8px;
         }
 
         main {
@@ -85,6 +79,7 @@
             padding: 20px;
             margin-bottom: 25px;
             position: relative;
+            transition: all 0.3s ease;
         }
 
         .character-section:hover {
@@ -108,18 +103,21 @@
             color: #fff;
             padding: 2px 10px;
             font-size: 1.2rem;
+            border-radius: 4px;
         }
 
         .top-3-rank {
             border-color: #ffaa00;
             background-color: #fffdf5;
         }
+
         .top-3-rank .rank-number {
             background-color: #ffaa00;
             color: #000;
         }
+
         .top-3-rank h4 {
-            color: #ffaa00;
+            color: #d48800;
         }
 
         p {
@@ -128,6 +126,43 @@
             line-height: 1.6;
             color: #333333;
             margin: 0;
+        }
+
+        /* --- ESTILOS DOS BOTÕES DE LIKE/DISLIKE --- */
+        .vote-container {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .vote-btn {
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            padding: 6px 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .vote-btn:hover {
+            background-color: #e0e0e0;
+        }
+
+        .vote-btn.like-active {
+            background-color: #2e7d32;
+            color: white;
+            border-color: #2e7d32;
+        }
+
+        .vote-btn.dislike-active {
+            background-color: #c62828;
+            color: white;
+            border-color: #c62828;
         }
 
         footer {
@@ -139,169 +174,364 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <header>
             <h1>Jujutsu Shenanigans Tier List 👍</h1>
             <h3>Esta "tier list" é baseada na opinião de Rafael Fazan de Almeida, ou seja, o autor desse site.</h3>
             <p>
-                Este "blog" é para classificar todos os personagens jogáveis em servidores publicos no Jujutsu Shenanigans, isso contará também os que estão em acesso Antecipado. Enfim, vamos começar logo essa brincadeira.
+                Este "blog" é para classificar todos os personagens jogáveis em servidores públicos no Jujutsu
+                Shenanigans, isso contará também os que estão em acesso antecipado. Enfim, vamos começar logo essa
+                brincadeira.
             </p>
             <img src="gojo calvo.png" alt="imagem oficial do tze">
-        </header> 
+        </header>
 
         <main>
             <div class="character-section">
                 <h4><span class="rank-number">20</span> Lucky Coward (Haruta Shigemo)</h4>
                 <img src="haruta.png" alt="uma imagem de exemplo do Haruta">
                 <p>
-                    O Haruta fica na última posição por ser um personagem extremamente difícil de se jogar. Além de ter pouca vida, ele depende totalmente da mecânica de milagres, que não é nada fácil de carregar. Acertar o counter até que é viável se você tiver um bom reflexo, mas o farp é praticamente impossível, e a sua ult é a que causa menos dano no jogo inteiro, é literalmente a pior ult de todas. Mas o dano base dele continua sendo muito baixo para o PvP. No fim das contas, a comunidade de 'main Haruta' se divide em três: os viciados que jogam de forma absurda, os corajosos que gostam do perigo, e os iniciantes que tentam imitar o que viram em algum vídeo. É inegável que jogar bem com ele é muito satisfatório, mas quando você joga mal, a vontade de arremessar o celular ou o PC pela janela é real.
+                    O Haruta fica na última posição por ser um personagem extremamente difícil de se jogar. Além de ter
+                    pouca vida, ele depende totalmente da mecânica de milagres, que não é nada fácil de carregar.
+                    Acertar o counter até que é viável se você tiver um bom reflexo, mas o farp é praticamente
+                    impossível, e a sua ult é a que causa menos dano no jogo inteiro, é literalmente a pior ult de
+                    todas. Mas o dano base dele continua sendo muito baixo para o PvP. No fim das contas, a comunidade
+                    de 'main Haruta' se divide em três: os viciados que jogam de forma absurda, os corajosos que gostam
+                    do perigo, e os iniciantes que tentam imitar o que viram em algum vídeo. É inegável que jogar bem
+                    com ele é muito satisfatório, mas quando você joga mal, a vontade de arremessar o celular ou o PC
+                    pela janela é real.
                 </p>
+                <div class="vote-container">
+                    <button class="vote-btn like-btn">👍 <span class="like-count">0</span></button>
+                    <button class="vote-btn dislike-btn">👎 <span class="dislike-count">0</span></button>
+                </div>
             </div>
 
             <div class="character-section">
                 <h4><span class="rank-number">19</span> Puppet Master (Ultimate Mechamaru)</h4>
-                <img src="mechamaru.jpeg" alt="uma imagen de exemplo do Mechamaru">
+                <img src="mechamaru.jpeg" alt="uma imagem de exemplo do Mechamaru">
                 <p>
-                    Já o Mechamaru é um outro personagem cujas skills base são bem mais ou menos, mas ele não é muito ruim não. O seu "R" e sua ult são até que bem divertidos de se usar, o seu "R" invoca um ou dois bonequinhos que podem usar suas abilidades base e dá para fazer uma artilharia com a sua terceira skill e com o "R" e a sua ULT, Cara, a ULT, você vira simplesmente um ROBÔ GIGANTE, e ainda dá para usar emotes normalmente! Mas de resto, ele é bem esquivável, tadinho dele.
+                    Já o Mechamaru é um outro personagem cujas skills base são bem mais ou menos, mas ele não é muito
+                    ruim não. O seu "R" e sua ult são até que bem divertidos de se usar, o seu "R" invoca um ou dois
+                    bonequinhos que podem usar suas habilidades base e dá para fazer uma artilharia com a sua terceira
+                    skill e com o "R" e a sua ULT, Cara, a ULT, você vira simplesmente um ROBÔ GIGANTE, e ainda dá para
+                    usar emotes normalmente! Mas de resto, ele é bem esquivável, tadinho dele.
                 </p>
+                <div class="vote-container">
+                    <button class="vote-btn like-btn">👍 <span class="like-count">0</span></button>
+                    <button class="vote-btn dislike-btn">👎 <span class="dislike-count">0</span></button>
+                </div>
             </div>
 
             <div class="character-section">
                 <h4><span class="rank-number">18</span> Black Death (Kurourushi)</h4>
-                <img src="kourorushi.jpeg" alt="uma imagen de exemplo do Kurourushi">
-                <p>O kourorushi é um personagem bem legal de se usar por causa da sua mecanica de clogem que é bem legal e divertida de se usar, mas o unico problema é que ele está bem fraco por causa de tanto nerf que o Tze deu nele umas duas horas depois do seu lançamento por que ele estáva BEM quebrado de tanto clone e forte que ele estáva,hoje em dia ele está até que ok,mas o Kurourushi está bem mais facil de lutar contra.as skills do kourorushi são eté que simples não e mecanica tão roubada e complexa assim,o mais complexo do personagen é o "R" que são aquelas moscas mas não nada de mais.resumindo, o kourorushi é um personagen fraco mas devemos reconhecer a sua força,principalmente no seu lançamento.  
+                <img src="kourorushi.jpeg" alt="uma imagem de exemplo do Kurourushi">
+                <p>O kourorushi é um personagem bem legal de se usar por causa da sua mecanica de clogem que é bem legal
+                    e divertida de se usar, mas o unico problema é que ele está bem fraco por causa de tanto nerf que o
+                    Tze deu nele umas duas horas depois do seu lançamento por que ele estáva BEM quebrado de tanto clone
+                    e forte que ele estáva,hoje em dia ele está até que ok,mas o Kurourushi está bem mais facil de lutar
+                    contra.as skills do kourorushi são eté que simples não e mecanica tão roubada e complexa assim,o
+                    mais complexo do personagen é o "R" que são aquelas moscas mas não nada de mais.resumindo, o
+                    kourorushi é um personagen fraco mas devemos reconhecer a sua força,principalmente no seu
+                    lançamento.
                 </p>
+                <div class="vote-container">
+                    <button class="vote-btn like-btn">👍 <span class="like-count">0</span></button>
+                    <button class="vote-btn dislike-btn">👎 <span class="dislike-count">0</span></button>
+                </div>
             </div>
 
             <div class="character-section">
                 <h4><span class="rank-number">17</span> Disaster Plants (Hanami)</h4>
                 <img src="hanami.jpeg" alt="uma imagem de exemplo da hanami">
                 <p>
-                    Como está em Acesso Antecipado, o moveset da Hanami ainda carece de ajustes finos. O poder de controlar as raízes e flores é interessante e muito divertido,e o tres delá rouba a evasiva que dá para fazer combos mais extensos e longos que podem dar muito dano.
+                    Como está em Acesso Antecipado, o moveset da Hanami ainda carece de ajustes finos. O poder de
+                    controlar as raízes e flores é interessante e muito divertido,e o tres delá rouba a evasiva que dá
+                    para fazer combos mais extensos e longos que podem dar muito dano,o "R" da hanami é muito chato de
+                    se lidar contra mas muito legal e util de se usar pois essa abilidade deixa o inimigo em stum que dá
+                    brecha para fazer combos.
                 </p>
+                <div class="vote-container">
+                    <button class="vote-btn like-btn">👍 <span class="like-count">0</span></button>
+                    <button class="vote-btn dislike-btn">👎 <span class="dislike-count">0</span></button>
+                </div>
             </div>
 
             <div class="character-section">
                 <h4><span class="rank-number">16</span> Perfection (Mahito)</h4>
                 <img src="mahito.jpeg" alt="uma imagem de exemplo do mahito">
                 <p>
-                    o Mahito é até que bem OK por se diser por que o seu moveset base ser até que simples, e o legal do mahito é o seu "R" que faz o seus braços mudaren de forma e consequentemente muda o seu "3" o dash e o seu combo de M1 dando mais para fazer combos mais variados,mas seu problema é a lentidão de alguns ataque que só com um evasiva pode fazer você perder pelo menos metade do seu HP. 
+                    o Mahito é até que bem OK por se diser por que o seu moveset base ser até que simples, e o legal do
+                    mahito é o seu "R" que faz o seus braços mudaren de forma e consequentemente muda o seu "3" o dash e
+                    o seu combo de M1 dando mais para fazer combos mais variados,mas seu problema é a lentidão de alguns
+                    ataque que só com um evasiva pode fazer você perder pelo menos metade do seu HP.
                 </p>
+                <div class="vote-container">
+                    <button class="vote-btn like-btn">👍 <span class="like-count">0</span></button>
+                    <button class="vote-btn dislike-btn">👎 <span class="dislike-count">0</span></button>
+                </div>
             </div>
 
             <div class="character-section">
                 <h4><span class="rank-number">15</span> Locust Guy (Gafanhoto Amaldiçoado)</h4>
                 <img src="gafanhoto.jpeg" alt="uma imagem de exemplo do gafanhoto">
                 <p>
-                    O famoso Gafanhoto(ou grilo para os mais intimos) é um personagem focado em pura agressividade física e socos rápidos. Bom ele é um personagens que seus mais são muito gente boa e divertidos,mas falando do personagen em si, o seu combos, a maioria tem que usar o seu "R" que dá para escapar até que bem facilmente,e isso é um problema.
+                    O famoso Gafanhoto(ou grilo para os mais intimos) é um personagem focado em pura agressividade
+                    física e socos rápidos. Bom ele é um personagens que seus mais são muito gente boa e divertidos,mas
+                    falando do personagen em si, o seu combos, a maioria tem que usar o seu "R" que dá para escapar até
+                    que bem facilmente,e isso é um problema.
                 </p>
+                <div class="vote-container">
+                    <button class="vote-btn like-btn">👍 <span class="like-count">0</span></button>
+                    <button class="vote-btn dislike-btn">👎 <span class="dislike-count">0</span></button>
+                </div>
             </div>
 
             <div class="character-section">
                 <h4><span class="rank-number">14</span> Ten Shadows (Megumi Fushiguro)</h4>
                 <img src="megumi.jpeg" alt="uma imagem de exemplo do megumi">
                 <p>
-                    O Megumi no seu moveset base é bem simples e bem lento sem considerar as sua variações.se for contar as suas variações ele se torna de 1 para 1.5, ou seja quase nada por que ele é muito span, e seus mains quase tem abilidade com outos personagem sem spamar as abilidades.
+                    O Megumi no seu moveset base é bem simples e bem lento sem considerar as sua variações.se for contar
+                    as suas variações ele se torna de 1 para 1.5, ou seja quase nada por que ele é muito span, e seus
+                    mains quase tem abilidade com outos personagem sem spamar as abilidades,mas como toda regra tem sua
+                    exeçãotem mains de megumi que jogam bem e fazem combos muito elaborados,algo que acho genial e bem
+                    criativo é o seu "R" que dá para esconder itens e pegar o adversario de surpresa.
                 </p>
+                <div class="vote-container">
+                    <button class="vote-btn like-btn">👍 <span class="like-count">0</span></button>
+                    <button class="vote-btn dislike-btn">👎 <span class="dislike-count">0</span></button>
+                </div>
             </div>
 
             <div class="character-section">
                 <h4><span class="rank-number">13</span> Head of the Hei (Naoya Zen'in)</h4>
                 <img src="naoya.jpeg" alt="uma imagem de exemplo do naoya">
                 <p>
-                    O Naoya é o mestre da velocidade. Em consegue se mover pelo mapa de forma absurda e confundir os oponentes. O problema é que o dano de suas habilidades individuais é relativamente baixo, exigindo que você tem que sempre tentar fazer combos sem errar para não virar vidro para finalizar um inimigo,e tem tres tipos de mains de naoya, o que é bom e gente boa,o bom que é toxico e tem o ruim.
+                    O Naoya é o mestre da velocidade. Em consegue se mover pelo mapa de forma absurda e confundir os
+                    oponentes. O problema é que o dano de suas habilidades individuais é relativamente baixo, exigindo
+                    que você tem que sempre tentar fazer combos sem errar para não virar vidro para finalizar um
+                    inimigo,e tem tres tipos de mains de naoya, o que é bom e gente boa,o bom que é toxico e tem o ruim.
                 </p>
+                <div class="vote-container">
+                    <button class="vote-btn like-btn">👍 <span class="like-count">0</span></button>
+                    <button class="vote-btn dislike-btn">👎 <span class="dislike-count">0</span></button>
+                </div>
             </div>
 
             <div class="character-section">
                 <h4><span class="rank-number">12</span> Aspiring Mangaka (Charles Bernard)</h4>
                 <p>
-                    O Mangaka usa sua caneta gigante para prever os movimentos e atacar de média distância. É um boneco sólido com um combo básico decente, mas que exige muita precisão no posicionamento para não ser punido por personagens hiper-agressivos.
+                    O Mangaka usa sua caneta gigante para prever os movimentos e atacar de média distância. É um boneco
+                    sólido com um combo básico decente, mas que exige muita precisão no posicionamento para não ser
+                    punido por personagens hiper-agressivos.
                 </p>
+                <div class="vote-container">
+                    <button class="vote-btn like-btn">👍 <span class="like-count">0</span></button>
+                    <button class="vote-btn dislike-btn">👎 <span class="dislike-count">0</span></button>
+                </div>
             </div>
 
             <div class="character-section">
                 <h4><span class="rank-number">11</span> Crow Charmer (Mei Mei)</h4>
                 <p>
-                    A Mei Mei se destaca pelo uso excelente de seus corvos para zonear o mapa e causar dano contínuo à distância, além de golpes fortes com o machado. Ela dita o ritmo da luta, mas sofre se for encurralada contra a parede.
+                    A Mei Mei se destaca pelo uso excelente de seus corvos para zonear o mapa e causar dano contínuo à
+                    distância, além de golpes fortes com o machado. Ela dita o ritmo da luta, mas sofre se for
+                    encurralada contra a parede.
                 </p>
+                <div class="vote-container">
+                    <button class="vote-btn like-btn">👍 <span class="like-count">0</span></button>
+                    <button class="vote-btn dislike-btn">👎 <span class="dislike-count">0</span></button>
+                </div>
             </div>
 
             <div class="character-section">
                 <h4><span class="rank-number">10</span> Star Rage (Yuki Tsukumo)</h4>
                 <p>
-                    Entrando no Top 10, a Yuki tem um dos socos mais pesados do jogo graças à mecânica de massa. Seus golpes quebram a guarda facilmente e causam um estrago imenso. Ela só perde posições pela lentidão em fechar os combos depois de errar o golpe inicial.
+                    Entrando no Top 10, a Yuki tem um dos socos mais pesados do jogo graças à mecânica de massa. Seus
+                    golpes quebram a guarda facilmente e causam um estrago imenso. Ela só perde posições pela lentidão
+                    em fechar os combos depois de errar o golpe inicial.
                 </p>
+                <div class="vote-container">
+                    <button class="vote-btn like-btn">👍 <span class="like-count">0</span></button>
+                    <button class="vote-btn dislike-btn">👎 <span class="dislike-count">0</span></button>
+                </div>
             </div>
 
             <div class="character-section">
                 <h4><span class="rank-number">9</span> Salaryman (Kento Nanami)</h4>
                 <p>
-                    O Nanami é o mestre dos acertos críticos na proporção 7:3. Se você dominar o tempo exato das habilidades dele, o dano é avassalador. É um personagem cirúrgico, muito equilibrado e confiável para qualquer partida competitiva.
+                    O Nanami é o mestre dos acertos críticos na proporção 7:3. Se você dominar o tempo exato das
+                    habilidades dele, o dano é avassalador. É um personagem cirúrgico, muito equilibrado e confiável
+                    para qualquer partida competitiva.
                 </p>
+                <div class="vote-container">
+                    <button class="vote-btn like-btn">👍 <span class="like-count">0</span></button>
+                    <button class="vote-btn dislike-btn">👎 <span class="dislike-count">0</span></button>
+                </div>
             </div>
 
             <div class="character-section">
                 <h4><span class="rank-number">8</span> Cursed Partners (Yuta Okkotsu & Rika)</h4>
                 <p>
-                    O Yuta tem um alcance formidável com a espada e uma excelente mobilidade. Quando a Rika entra em ação para estender os combos ou defendê-lo, ele se torna um pesadelo. Um personagem completíssimo.
+                    O Yuta tem um alcance formidável com a espada e uma excelente mobilidade. Quando a Rika entra em
+                    ação para estender os combos ou defendê-lo, ele se torna um pesadelo. Um personagem completíssimo.
                 </p>
+                <div class="vote-container">
+                    <button class="vote-btn like-btn">👍 <span class="like-count">0</span></button>
+                    <button class="vote-btn dislike-btn">👎 <span class="dislike-count">0</span></button>
+                </div>
             </div>
 
             <div class="character-section">
                 <h4><span class="rank-number">7</span> True Cannon (Ryu Ishigori)</h4>
                 <p>
-                    O Ryu é focado em rajadas de energia colossais. O dano do seu canhão de feixes limpa barras de vida inteiras e o alcance cobre quase o mapa todo. Excelente para causar caos, tanto em duelos quanto em servidores públicos cheios.
+                    O Ryu é focado em rajadas de energia colossais. O dano do seu canhão de feixes limpa barras de vida
+                    inteiras e o alcance cobre quase o mapa todo. Excelente para causar caos, tanto em duelos quanto em
+                    servidores públicos cheios.
                 </p>
+                <div class="vote-container">
+                    <button class="vote-btn like-btn">👍 <span class="like-count">0</span></button>
+                    <button class="vote-btn dislike-btn">👎 <span class="dislike-count">0</span></button>
+                </div>
             </div>
 
             <div class="character-section">
                 <h4><span class="rank-number">6</span> Blood Manipulator (Choso)</h4>
                 <p>
-                    Quase no Top 5, o Choso tem um dos melhores controles de média e longa distância do jogo através da manipulação de sangue (como a Supernova e Piercing Blood). Ele consegue punir oponentes de longe e emendar combos aéreos com facilidade.
+                    Quase no Top 5, o Choso tem um dos melhores controles de média e longa distância do jogo através da
+                    manipulação de sangue (como a Supernova e Piercing Blood). Ele consegue punir oponentes de longe e
+                    emendar combos aéreos com facilidade.
                 </p>
+                <div class="vote-container">
+                    <button class="vote-btn like-btn">👍 <span class="like-count">0</span></button>
+                    <button class="vote-btn dislike-btn">👎 <span class="dislike-count">0</span></button>
+                </div>
             </div>
 
             <div class="character-section">
                 <h4><span class="rank-number">5</span> Switcher (Aoi Todo)</h4>
                 <p>
-                    O Todo é o rei da mente no PvP. A mecânica do Boogie Woogie permite trocar de lugar com o oponente ou objetos, quebrando completamente a sequência de ataque do inimigo. É o contra-ataque perfeito e um dos personagens mais inteligentes de se jogar.
+                    O Todo é o rei da mente no PvP. A mecânica do Boogie Woogie permite trocar de lugar com o oponente
+                    ou objetos, quebrando completamente a sequência de ataque do inimigo. É o contra-ataque perfeito e
+                    um dos personagens mais inteligentes de se jogar.
                 </p>
+                <div class="vote-container">
+                    <button class="vote-btn like-btn">👍 <span class="like-count">0</span></button>
+                    <button class="vote-btn dislike-btn">👎 <span class="dislike-count">0</span></button>
+                </div>
             </div>
 
             <div class="character-section">
                 <h4><span class="rank-number">4</span> Honored One (Satoru Gojo)</h4>
                 <p>
-                    Gojo oferece um kit absurdo de ferramentas. Com o Vazio Roxo (Purple), Azul, Vermelho e o teletransporte, ele domina todas as distâncias. Seu Despertar com a Expansão de Domínio é um nocaute quase garantido se pegar o oponente sem recursos.
+                    Gojo oferece um kit absurdo de ferramentas. Com o Vazio Roxo (Purple), Azul, Vermelho e o
+                    teletransporte, ele domina todas as distâncias. Seu Despertar com a Expansão de Domínio é um nocaute
+                    quase garantido se pegar o oponente sem recursos.
                 </p>
+                <div class="vote-container">
+                    <button class="vote-btn like-btn">👍 <span class="like-count">0</span></button>
+                    <button class="vote-btn dislike-btn">👎 <span class="dislike-count">0</span></button>
+                </div>
             </div>
 
             <div class="character-section top-3-rank">
                 <h4><span class="rank-number">3</span> Restless Gambler (Kinji Hakari)</h4>
                 <p>
-                    Abrindo o pódio em terceiro lugar, o Hakari é o ápice da sobrevivência. O seu moveset base é rápido e focado em artes marciais agressivas, mas o verdadeiro brilho está no seu Despertar: se você tirar a sorte grande no Jackpot, você ganha regeneração passiva imortal, permitindo cometer erros e continuar pressionando sem parar.
+                    Abrindo o pódio em terceiro lugar, o Hakari é o ápice da sobrevivência. O seu moveset base é rápido
+                    e focado em artes marciais agressivas, mas o verdadeiro brilho está no seu Despertar: se você tirar
+                    a sorte grande no Jackpot, você ganha regeneração passiva imortal, permitindo cometer erros e
+                    continuar pressionando sem parar.
                 </p>
+                <div class="vote-container">
+                    <button class="vote-btn like-btn">👍 <span class="like-count">0</span></button>
+                    <button class="vote-btn dislike-btn">👎 <span class="dislike-count">0</span></button>
+                </div>
             </div>
 
             <div class="character-section top-3-rank">
                 <h4><span class="rank-number">2</span> Defense Attorney (Hiromi Higuruma)</h4>
                 <p>
-                    O Higuruma ocupa a segunda posição porque ele quebra as regras do jogo. A mecânica de abrir o tribunal e julgar o oponente pode confiscar temporariamente o moveset ou as habilidades do inimigo. Lutar contra um Higuruma sem poder usar suas próprias skills é uma das experiências mais desesperadoras do jogo.
+                    O Higuruma ocupa a segunda posição porque ele quebra as regras do jogo. A mecânica de abrir o
+                    tribunal e julgar o oponente pode confiscar temporariamente o moveset ou as habilidades do inimigo.
+                    Lutar contra um Higuruma sem poder usar suas próprias skills é uma das experiências mais
+                    desesperadoras do jogo.
                 </p>
+                <div class="vote-container">
+                    <button class="vote-btn like-btn">👍 <span class="like-count">0</span></button>
+                    <button class="vote-btn dislike-btn">👎 <span class="dislike-count">0</span></button>
+                </div>
             </div>
 
             <div class="character-section top-3-rank">
                 <h4><span class="rank-number">1</span> Vessel (Yuji Itadori)</h4>
                 <p>
-                    O grande campeão da lista. O Yuji possui o moveset base mais consistente, fluido e devastador para emendar combos estendidos (especialmente usando o Punho Divergente e o Black Flash). Para completar, o seu Despertar traz o Sukuna, que possui os ataques de corte mais fortes do meta e uma Expansão de Domínio que derrete a vida de múltiplos alvos ao mesmo tempo. É o personagem mais sólido do jogo.
+                    O grande campeão da lista. O Yuji possui o moveset base mais consistente, fluido e devastador para
+                    emendar combos estendidos (especialmente usando o Punho Divergente e o Black Flash). Para completar,
+                    o seu Despertar traz o Sukuna, que possui os ataques de corte mais fortes do meta e uma Expansão de
+                    Domínio que derrete a vida de múltiplos alvos ao mesmo tempo. É o personagem mais sólido do jogo.
                 </p>
+                <div class="vote-container">
+                    <button class="vote-btn like-btn">👍 <span class="like-count">0</span></button>
+                    <button class="vote-btn dislike-btn">👎 <span class="dislike-count">0</span></button>
+                </div>
             </div>
         </main>
 
         <footer>
             <p>Criado com orgulho por Rafael Fazan de Almeida &copy; 2026</p>
         </footer>
-    </div> 
+    </div>
+
+    <script>
+        document.querySelectorAll('.character-section').forEach(section => {
+            const likeBtn = section.querySelector('.like-btn');
+            const dislikeBtn = section.querySelector('.dislike-btn');
+            const likeCount = section.querySelector('.like-count');
+            const dislikeCount = section.querySelector('.dislike-count');
+
+            let likes = 0;
+            let dislikes = 0;
+            let userVote = null;
+
+            likeBtn.addEventListener('click', () => {
+                if (userVote === 'like') {
+                    likes--;
+                    userVote = null;
+                    likeBtn.classList.remove('like-active');
+                } else {
+                    if (userVote === 'dislike') {
+                        dislikes--;
+                        dislikeBtn.classList.remove('dislike-active');
+                    }
+                    likes++;
+                    userVote = 'like';
+                    likeBtn.classList.add('like-active');
+                }
+                likeCount.textContent = likes;
+                dislikeCount.textContent = dislikes;
+            });
+
+            dislikeBtn.addEventListener('click', () => {
+                if (userVote === 'dislike') {
+                    dislikes--;
+                    userVote = null;
+                    dislikeBtn.classList.remove('dislike-active');
+                } else {
+                    if (userVote === 'like') {
+                        likes--;
+                        likeBtn.classList.remove('like-active');
+                    }
+                    dislikes++;
+                    userVote = 'dislike';
+                    dislikeBtn.classList.add('dislike-active');
+                }
+                likeCount.textContent = likes;
+                dislikeCount.textContent = dislikes;
+            });
+        });
+    </script>
 </body>
+
 </html>
